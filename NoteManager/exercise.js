@@ -25,6 +25,11 @@ addToForm.addEventListener('submit',function(e){
      const newLi = document.createElement('li');
      const newP = document.createElement('p');
 
+     const newP2 = document.createElement('p');
+     const newI1 = document.createElement('i');
+     const newI2 = document.createElement('i');
+
+
     /* add content/value */ 
     newP.innerText=newItemContent;
     console.log(newP.innerText);
@@ -33,8 +38,24 @@ addToForm.addEventListener('submit',function(e){
     newLi.append(newP);
     originalUl.append(newLi);
 
+    newLi.append(newP2);
+    newP2.append(newI1);
+    newP2.append(newI2);
 
-    // clear the value
+    
+    /*  to apply class */ 
+
+    // approach 1
+    newI1.classList.add('fa');
+    newI1.classList.add('fa-pencil-square-o');
+
+    // approach 2
+    newI2.className +="fa fa-times";
+    
+
+
+
+    /* clear the value */
     this.querySelector('input[type="text"]').value = '';
 
    
