@@ -2,7 +2,7 @@
 
 
 const originalUl = document.querySelector(' .note-list #list');
-//console.log(originalUl);
+console.log(originalUl);
 
 const addToForm = document.querySelectorAll('form')[1];
 //console.log(addToForm);
@@ -51,8 +51,11 @@ addToForm.addEventListener('submit',function(e){
 
     // approach 2
     newI2.className +="fa fa-times";
-    
 
+    // approach 3
+    //.setAttribute('','')
+
+    
 
 
     /* clear the value */
